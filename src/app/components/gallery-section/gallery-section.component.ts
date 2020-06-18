@@ -25,7 +25,7 @@ export class GallerySectionComponent implements OnInit {
   getInstagram(accessToken){
     this.instagramService.getInstagram(accessToken).
       subscribe(info =>{
-        console.log(info);
+        //console.log(info);
         this.instagram = info['data'];
       })
     

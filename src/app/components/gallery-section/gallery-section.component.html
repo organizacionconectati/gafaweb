@@ -19,9 +19,9 @@
                             href="{{ins.link}}"  
                             [attr.data-image-id]="count" 
                             title="{{ins.likes.count}} Likes"
-                            [attr.data-image]="ins.images.low_resolution.url"
+                            [attr.data-image]="ins.images.standard_resolution.url"
                             target="_blank">
-                            <img class="img-thumbnail" [src]="ins.images.low_resolution.url">
+                            <img class="img-thumbnail" [src]="ins.images.standard_resolution.url">
                             <div class="card-body">
                                 <p class="card-text">{{ins.caption.text}}</p>
                             </div>
