@@ -21,6 +21,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ServicesPageSectionComponent } from './components/services-page-section/services-page-section.component';
 import { ProductsPageSectionComponent } from './components/products-page-section/products-page-section.component';
 import { GallerySectionComponent } from './components/gallery-section/gallery-section.component';
+import { MainSliderTwoComponent } from './components/main-slider-two/main-slider-two.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { GallerySectionComponent } from './components/gallery-section/gallery-se
     AboutUsComponent,
     ServicesPageSectionComponent,
     ProductsPageSectionComponent,
-    GallerySectionComponent
+    GallerySectionComponent,
+    MainSliderTwoComponent
   ],
   imports: [
     BrowserModule,

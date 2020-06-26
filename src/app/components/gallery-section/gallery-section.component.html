@@ -1,68 +1,35 @@
-<section class="gallery-section">
+<section class="services-page-section">
+    <div class="sec-title text-center">
+        <h2 class="font-weight-light text-center text-lg-left mt-4 mb-0">Galeria</h2>
+        <div class="separator"><span class="flaticon-settings-2"></span></div>
+    </div>      
     <div class="auto-container">
-        <div class="sec-title text-center">
-            <h2>Galeria</h2>
-            <div class="separator"><span class="flaticon-settings-2"></span></div>
-        </div>
-        <div class="container">
-            <ng-container *ngIf="instagram?.length>0">   
-                <div>
-                    <a class="btn btn-outline-danger btn-block" href="https://www.instagram.com/{{instagram[0].user.username}}" 
-                            target="_blank"><i class="fab fa-instagram"> sigueme en {{instagram[0].user.username}} </i>  
-                    </a>
-                </div>
-                <br>  
-            <div class="row">
-                <div class="row">                      
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb" *ngFor="let ins of instagram ; let count = index">
-                        <a  class="thumbnail" 
-                            href="{{ins.link}}"  
-                            [attr.data-image-id]="count" 
-                            title="{{ins.likes.count}} Likes"
-                            [attr.data-image]="ins.images.standard_resolution.url"
-                            target="_blank">
-                            <img class="img-thumbnail" [src]="ins.images.standard_resolution.url">
-                            <div class="card-body">
-                                <p class="card-text">{{ins.caption.text}}</p>
-                            </div>
-                        </a>
-                    </div>                                                      
-                </div>
-        
-                <!--
-                <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="image-gallery-title"></h4>
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img id="image-gallery-image" class="img-responsive col-md-12" src="">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
-                                </button>
-        
-                                <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
-                                </button>
-                            </div>
+        <div class="row clearfix">
+            <!-- Service Block -->
+            <ng-container *ngIf="instagram?.length>0">                  
+            <div class="service-block col-lg-4 col-md-6 col-sm-12" *ngFor="let ins of instagram ; let count = index">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure><img [src]="ins.images.standard_resolution.url"></figure>
+                        <div class="title"><h4>{{ins.likes.count}} Likes</h4></div>
+                    </div>
+                    <div class="caption-box">
+                        <div class="title-box">
+                            <span class="icon flaticon-electrical"></span>
+                            <h4>{{ins.likes.count}} Likes</h4>
                         </div>
+                        <p>{{ins.caption.text}}</p>
+                        <a href="{{ins.link}}" target="_blank" class="read-more" >Saber más <i class="fa fa-angle-double-right"></i></a>
                     </div>
                 </div>
-                -->
-            </div>
-            </ng-container>
-            <ng-container *ngIf="instagram?.length===0">
-                <div class="alert alert-warning" role="alert">
-                  No hay Instagram asociado. ☹
-                </div>
-              </ng-container>            
-        </div>
-
-
-    </div>
+            </div>            
+        </ng-container>
     
+        <ng-container *ngIf="instagram?.length===0">
+          <div class="alert alert-warning" role="alert">
+            No hay Instagram asociado. ☹
+          </div>
+        </ng-container>            
+        </div>
+    </div>
 </section>
-

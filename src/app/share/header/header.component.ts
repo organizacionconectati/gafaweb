@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit /*,EventEmitter, Output*/ } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  name : string = "Inicio";
+
+  //@Output()
+  //showOutput: EventEmitter<boolean> = new EventEmitter<boolean>();
+
   constructor() { }
 
   ngOnInit(): void {
+    //this.showOutput.emit(true);
   }
+
+  letterMenu(input :string){
+    this.name = input;
+  }
+
+  /*
+  sliderShow(input :boolean){
+    this.showOutput.emit(input);
+  }
+*/
 
 }

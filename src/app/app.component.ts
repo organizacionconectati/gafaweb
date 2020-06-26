@@ -12,4 +12,6 @@ export class AppComponent {
   mes : number = new Date().getMonth();
   dia : number = new Date().getDay();
 
+  showPadre: boolean;
+
 }

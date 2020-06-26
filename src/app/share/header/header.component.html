@@ -1,7 +1,24 @@
 <header class="fixed-top-bar">
-
         <div class="auto-container">
            <div class="main-box clearfix">
+            <div class="outer-box">
+
+                <!-- Cart Btn -->
+                <div class="cart-btn">
+                <a href="https://tienda.repuestosgafa.cl/" target="_blank" 
+                title="Nuestra Tienda">
+                    <i class="flaticon-shopping-bag-1"></i>
+                    <span class="count">+9</span>
+                </a>
+            </div>
+
+            <!-- Fixed Search Box Btn -->
+            <div class="fixed-search-box-btn">{{name}}</div>
+
+            <a href="https://tienda.repuestosgafa.cl/" target="_blank" class="theme-btn btn-style-one">Tienda</a>    
+
+            </div>
+
                 <!-- Main Menu -->
                 <nav class="main-menu navbar-expand-md">
                     <div class="navbar-header">
@@ -14,17 +31,16 @@
 
                     <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                         <ul class="navigation clearfix">                          
-                         <li><a [routerLink]="[ '/home' ]" routerLinkActive="active">Inicio</a></li>
+                         <li><a [routerLink]="[ '/home' ]" routerLinkActive="active" (click)="letterMenu('Inicio')">Inicio</a></li>
                          <li class="dropdown current"><a href="#">Nosotros</a>
                             <ul>
-                                <li><a [routerLink]="[ '/about' ]" routerLinkActive="active">.: Quiénes Somos :.</a></li>
-                                <li><a [routerLink]="[ '/team' ]" routerLinkActive="active">.: Equipo :.</a></li>
-                                <li><a [routerLink]="[ '/galeria' ]" routerLinkActive="active">.: Galería :.</a></li>
-                                <li><a [routerLink]="[ '/video' ]" routerLinkActive="active">.: Videos :.</a></li>
+                                <li><a [routerLink]="[ '/about' ]" routerLinkActive="active" (click)="letterMenu('Quiénes Somos')">.: Quiénes Somos :.</a></li>
+                                <li><a [routerLink]="[ '/team' ]" routerLinkActive="active" (click)="letterMenu('Equipo')">.: Equipo :.</a></li>
+                                <li><a [routerLink]="[ '/galeria' ]" routerLinkActive="active" (click)="letterMenu('Galería')">.: Galería :.</a></li>
                             </ul>
                         </li>                                                    
-                         <li><a [routerLink]="[ '/service' ]" routerLinkActive="active">Servicios</a></li>                                                   
-                         <li><a [routerLink]="[ '/contact' ]" routerLinkActive="active">Contactenós</a></li>
+                         <li><a [routerLink]="[ '/service' ]" routerLinkActive="active" (click)="letterMenu('Servicios')">Servicios</a></li>                                                   
+                         <li><a [routerLink]="[ '/contact' ]" routerLinkActive="active" (click)="letterMenu('Contactenós')">Contactenós</a></li>
                         </ul>
                     </div>
 
