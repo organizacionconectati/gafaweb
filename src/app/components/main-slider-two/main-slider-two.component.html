@@ -1,99 +1,115 @@
-<section class="main-slider-two">
-    <div>
-    <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_three_wrapper" data-source="gallery">
-        <div class="rev_slider fullwidthabanner" id="rev_slider_three" data-version="5.4.1">
-            <ul>
-                <!-- Slide 1 -->
-                <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="../assets/images/main-slider/image-7.jpg" data-title="Slide Title" data-transition="parallaxvertical">
-
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="../assets/images/main-slider/image-7.jpg">
-
-                    <div class="tp-caption"
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="text"
-                    data-height="none"
-                    data-width="['720','600','700','450']"
-                    data-whitespace="normal"
-                    data-hoffset="['-190','15','15','15']"
-                    data-voffset="['0','0','0','0']"
-                    data-x="['right','right','left','left']"
-                    data-y="['middle','middle','middle','middle']"
-                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                        <div class="slider-content">
-                            <div class="title">Somos...</div>
-                            <h2>Respuestos GAFA</h2>
-                            <div class="text">Te haremos amar tu auto</div>
-                            <a href="https://tienda.repuestosgafa.cl/" target="_blank" routerLinkActive="active"  class="theme-btn btn-style-one">Tienda</a>
+<section class="main-slider-two"> 
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-dark btn-block text-center" (click)="btnOpenClose(openClose)" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                {{openClose}} <i class="fa fa-times-circle" aria-hidden="true"></i>
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="slider-image">        
+                    <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_three_wrapper" data-source="gallery">       
+                        <div class="rev_slider fullwidthabanner" id="rev_slider_three" data-version="5.4.1">             
+                            <ul>
+                                <!-- Slide 1 -->
+                                <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="../assets/images/main-slider/image-7.jpg" data-title="Slide Title" data-transition="parallaxvertical">
+                
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="../assets/images/main-slider/image-7.jpg">
+                
+                                    <div class="tp-caption"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-responsive_offset="on"
+                                    data-type="text"
+                                    data-height="none"
+                                    data-width="['720','600','700','450']"
+                                    data-whitespace="normal"
+                                    data-hoffset="['-190','15','15','15']"
+                                    data-voffset="['0','0','0','0']"
+                                    data-x="['right','right','left','left']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                                        <div class="slider-content">
+                                            <div class="title">Somos...</div>
+                                            <h2>Respuestos GAFA</h2>
+                                            <div class="text">Te haremos amar tu auto</div>
+                                            <a href="https://tienda.repuestosgafa.cl/" target="_blank" routerLinkActive="active"  class="theme-btn btn-style-one">Tienda</a>
+                                        </div>
+                                    </div>
+                
+                                </li>
+                
+                                <!-- Slide 2 -->
+                                <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="../assets/images/main-slider/image-2.jpg" data-title="Slide Title" data-transition="parallaxvertical">
+                
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="../assets/images/main-slider/image-2.jpg">
+                
+                                    <div class="tp-caption"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-responsive_offset="on"
+                                    data-type="text"
+                                    data-height="none"
+                                    data-width="['720','600','700','450']"
+                                    data-whitespace="normal"
+                                    data-hoffset="['-190','15','15','15']"
+                                    data-voffset="['0','0','0','0']"
+                                    data-x="['right','right','left','left']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                                        <div class="slider-content">
+                                            <div class="title">Bienvenida a </div>
+                                            <h2>Respuestos GAFA</h2>
+                                            <div class="text">Nos especializamos en cuidado completo de autos.</div>
+                                            <a href="/service" routerLinkActive="active"  class="theme-btn btn-style-one">Servicios</a>
+                                        </div>
+                                    </div>
+                
+                                </li>
+                
+                                <!-- Slide 3 -->
+                                <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1697" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="../assets/images/main-slider/image-3.jpg" data-title="Slide Title" data-transition="parallaxvertical">
+                                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="../assets/images/main-slider/image-3.jpg">
+                
+                                    <div class="tp-caption"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-responsive_offset="on"
+                                    data-type="text"
+                                    data-height="none"
+                                    data-width="['720','600','700','450']"
+                                    data-whitespace="normal"
+                                    data-hoffset="['-190','15','15','15']"
+                                    data-voffset="['0','0','0','0']"
+                                    data-x="['right','right','left','left']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                                        <div class="slider-content">
+                                            <div class="title">Bienvenida a </div>
+                                            <h2>Respuestos GAFA</h2>
+                                            <div class="text"> Trabajamos de manera profesional y a un bajo costo</div>
+                                            <a href="/contact" routerLinkActive="active"  class="theme-btn btn-style-one">Contactenós</a>
+                                        </div>
+                                    </div>
+                
+                                </li>
+                
+                            </ul>
                         </div>
                     </div>
-
-                </li>
-
-                <!-- Slide 2 -->
-                <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="../assets/images/main-slider/image-2.jpg" data-title="Slide Title" data-transition="parallaxvertical">
-
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="../assets/images/main-slider/image-2.jpg">
-
-                    <div class="tp-caption"
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="text"
-                    data-height="none"
-                    data-width="['720','600','700','450']"
-                    data-whitespace="normal"
-                    data-hoffset="['-190','15','15','15']"
-                    data-voffset="['0','0','0','0']"
-                    data-x="['right','right','left','left']"
-                    data-y="['middle','middle','middle','middle']"
-                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                        <div class="slider-content">
-                            <div class="title">Bienvenida a </div>
-                            <h2>Respuestos GAFA</h2>
-                            <div class="text">Nos especializamos en cuidado completo de autos.</div>
-                            <a href="/service" routerLinkActive="active"  class="theme-btn btn-style-one">Servicios</a>
-                        </div>
                     </div>
-
-                </li>
-
-                <!-- Slide 3 -->
-                <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1697" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="../assets/images/main-slider/image-3.jpg" data-title="Slide Title" data-transition="parallaxvertical">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="../assets/images/main-slider/image-3.jpg">
-
-                    <div class="tp-caption"
-                    data-paddingbottom="[0,0,0,0]"
-                    data-paddingleft="[0,0,0,0]"
-                    data-paddingright="[0,0,0,0]"
-                    data-paddingtop="[0,0,0,0]"
-                    data-responsive_offset="on"
-                    data-type="text"
-                    data-height="none"
-                    data-width="['720','600','700','450']"
-                    data-whitespace="normal"
-                    data-hoffset="['-190','15','15','15']"
-                    data-voffset="['0','0','0','0']"
-                    data-x="['right','right','left','left']"
-                    data-y="['middle','middle','middle','middle']"
-                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                        <div class="slider-content">
-                            <div class="title">Bienvenida a </div>
-                            <h2>Respuestos GAFA</h2>
-                            <div class="text"> Trabajamos de manera profesional y a un bajo costo</div>
-                            <a href="/contact" routerLinkActive="active"  class="theme-btn btn-style-one">Contactenós</a>
-                        </div>
-                    </div>
-
-                </li>
-
-            </ul>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 </section>

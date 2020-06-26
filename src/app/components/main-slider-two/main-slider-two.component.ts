@@ -1,4 +1,5 @@
 import { Component, OnInit/*, Input */} from '@angular/core';
+declare var $;
 
 @Component({
   selector: 'app-main-slider-two',
@@ -7,12 +8,22 @@ import { Component, OnInit/*, Input */} from '@angular/core';
 })
 export class MainSliderTwoComponent implements OnInit {
 
-  /*@Input()
-  showImput:boolean;*/
+    openClose : string = "Cerrar";
 
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(function(){ 
+      $("#accordionExample").hide(3000);
+    }, 45000);  
+  }
+
+  btnOpenClose(value: string){
+     if(value=="Cerrar"){
+        setTimeout(function(){ 
+           $("#accordionExample").hide(1500);
+         }, 1000);        
+     }
   }
 
 }
